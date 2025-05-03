@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batik Granit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf8f3;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #8b5e3c;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/featured/?batik') center/cover no-repeat;
+      padding: 5rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background-color: white;
+      color: #8b5e3c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .produk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .produk-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .produk-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .produk-item button {
+      margin-top: 0.5rem;
+      background-color: #8b5e3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .tentang {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+    .tentang img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #8b5e3c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="LOGO.bmp" alt="Logo Batik Granit">
+      <strong>Batik Granit</strong>
+    </div>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+      <a href="https://wa.me/628123456789" target="_blank"><button>Pesan Sekarang</button></a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Batik Granit</h1>
+    <p>Anggun. Berbudaya. Asli Nusantara.</p>
+    <button onclick="document.getElementById('produk').scrollIntoView({behavior: 'smooth'})">Lihat Koleksi</button>
+  </section>
+
+  <section id="produk">
+    <h2>Produk</h2>
+    <div class="produk">
+      <div class="produk-item">
+        <img src="https://source.unsplash.com/featured/?batik-fabric" alt="Batik Tulis">
+        <h3>Batik Tulis</h3>
+        <p>Rp 586.000</p>
+        <button>Pesan</button>
+      </div>
+      <div class="produk-item">
+        <img src="https://source.unsplash.com/featured/?batik-pattern" alt="Batik Cap">
+        <h3>Batik Cap</h3>
+        <p>Rp 147.000</p>
+        <button>Pesan</button>
+      </div>
+      <div class="produk-item">
+        <img src="https://source.unsplash.com/featured/?modern-batik" alt="Batik Modern">
+        <h3>Batik Modern</h3>
+        <p>Rp 300.000</p>
+        <button>Pesan</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <div class="tentang">
+      <div>
+        <p>Batik Granit berdiri dengan misi untuk melestarikan budaya batik Indonesia dalam sentuhan modern. Setiap kain adalah hasil karya penuh cinta dan keahlian.</p>
+        <p><em>Kami merawat tradisi melalui karya batik berkualitas.</em></p>
+      </div>
+      <img src="https://source.unsplash.com/featured/?batik-maker" alt="Tentang Kami">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Alamat: Jl. Batik Raya No.88, Yogyakarta</p>
+    <p>Jam Buka: Senin - Sabtu, 09.00 - 17.00</p>
+    <p>Instagram: @batikgranit</p>
+    <p>WhatsApp: <a href="https://wa.me/628123456789" target="_blank">Klik di sini untuk pesan</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Batik Granit. Made with ❤️ in Indonesia.
+  </footer>
+</body>
+</html>
